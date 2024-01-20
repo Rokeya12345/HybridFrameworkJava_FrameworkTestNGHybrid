@@ -31,6 +31,7 @@ public class LoginPageTest extends BaseTest {
      User inputs ‘Category’.
      User inputs ‘Phone Number’.
      Users saved the form.
+     User verify's the form is saved.
      *
      */
     @Test
