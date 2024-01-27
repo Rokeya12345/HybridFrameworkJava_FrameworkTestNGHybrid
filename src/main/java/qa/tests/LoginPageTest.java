@@ -14,6 +14,8 @@ public class LoginPageTest extends BaseTest {
     CogmentoPageEvents cogmentoPageEvents= new CogmentoPageEvents();
     CreateNewContactsEvents createNewContactsEvents= new CreateNewContactsEvents();
 
+    CogmentoSearchEvents cogmentoSearchEvents= new CogmentoSearchEvents();
+
 
     /**User opens chrome browser.
      User clicks on ‘login’ button.
@@ -38,9 +40,12 @@ public class LoginPageTest extends BaseTest {
     public void loginToTheApplication() throws InterruptedException {
         homePageEvents.signinBTN();
         loginPageEvents.enterCredentials();
-        cogmentoPageEvents.clickContactAddBTN();
-        Thread.sleep(10000);
-        createNewContactsEvents.enterCreateNewContactInfo();
+        //cogmentoPageEvents.clickContactAddBTN();
+        // Thread.sleep(2000);
+        //createNewContactsEvents.enterCreateNewContactInfo();
+
+        cogmentoSearchEvents.enterSearch();
+
 
     }
 }
