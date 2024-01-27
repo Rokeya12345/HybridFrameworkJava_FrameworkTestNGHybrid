@@ -9,6 +9,7 @@
             <class name="qa.tests.LoginPageTest">
                 <methods>
                     <include name="loginToTheApplication"/>
+
                 </methods>
             </class>
         </classes>

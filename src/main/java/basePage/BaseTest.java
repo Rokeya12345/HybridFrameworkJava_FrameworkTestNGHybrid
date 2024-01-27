@@ -78,7 +78,7 @@ public void beforeMethod(String browser, Method testMethod){
 
    public void afterTest(){
    extent.flush();   // When you get the report after Test then flush it.
-  // driver.quit();
+  driver.quit();
 }
 
 public void setupDriver(String browser){
